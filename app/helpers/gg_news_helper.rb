@@ -1,0 +1,2 @@
+module GgNewsHelper
+end

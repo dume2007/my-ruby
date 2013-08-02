@@ -1,0 +1,27 @@
+<h1>Listing gg_classlists</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Classname</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @gg_classlists.each do |gg_classlist| %>
+      <tr>
+        <td><%= gg_classlist.classname %></td>
+        <td><%= link_to 'Show', gg_classlist %></td>
+        <td><%= link_to 'Edit', edit_gg_classlist_path(gg_classlist) %></td>
+        <td><%= link_to 'Destroy', gg_classlist, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Gg classlist', new_gg_classlist_path %>

@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>News:</strong>
+  <%= @gg_news_file.news_id %>
+</p>
+
+<p>
+  <strong>Downpath:</strong>
+  <%= @gg_news_file.downpath %>
+</p>
+
+<%= link_to 'Edit', edit_gg_news_file_path(@gg_news_file) %> |
+<%= link_to 'Back', gg_news_files_path %>

@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  classid: 1
+  imgurl: MyString
+  title: MyString
+  author: MyString
+  filesize: 1
+  fileimg: MyString
+  onclick: 1
+
+two:
+  classid: 1
+  imgurl: MyString
+  title: MyString
+  author: MyString
+  filesize: 1
+  fileimg: MyString
+  onclick: 1

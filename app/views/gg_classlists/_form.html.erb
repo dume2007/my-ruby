@@ -1,0 +1,21 @@
+<%= form_for(@gg_classlist) do |f| %>
+  <% if @gg_classlist.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@gg_classlist.errors.count, "error") %> prohibited this gg_classlist from being saved:</h2>
+
+      <ul>
+      <% @gg_classlist.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :classname %><br>
+    <%= f.text_field :classname %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

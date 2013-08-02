@@ -1,0 +1,31 @@
+<h1>Listing gg_news_contents</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>News</th>
+      <th>Content</th>
+      <th>Extra</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @gg_news_contents.each do |gg_news_content| %>
+      <tr>
+        <td><%= gg_news_content.news_id %></td>
+        <td><%= gg_news_content.content %></td>
+        <td><%= gg_news_content.extra %></td>
+        <td><%= link_to 'Show', gg_news_content %></td>
+        <td><%= link_to 'Edit', edit_gg_news_content_path(gg_news_content) %></td>
+        <td><%= link_to 'Destroy', gg_news_content, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Gg news content', new_gg_news_content_path %>

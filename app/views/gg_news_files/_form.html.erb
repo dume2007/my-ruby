@@ -1,0 +1,25 @@
+<%= form_for(@gg_news_file) do |f| %>
+  <% if @gg_news_file.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@gg_news_file.errors.count, "error") %> prohibited this gg_news_file from being saved:</h2>
+
+      <ul>
+      <% @gg_news_file.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :news_id %><br>
+    <%= f.number_field :news_id %>
+  </div>
+  <div class="field">
+    <%= f.label :downpath %><br>
+    <%= f.text_area :downpath %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

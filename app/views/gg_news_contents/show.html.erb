@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>News:</strong>
+  <%= @gg_news_content.news_id %>
+</p>
+
+<p>
+  <strong>Content:</strong>
+  <%= @gg_news_content.content %>
+</p>
+
+<p>
+  <strong>Extra:</strong>
+  <%= @gg_news_content.extra %>
+</p>
+
+<%= link_to 'Edit', edit_gg_news_content_path(@gg_news_content) %> |
+<%= link_to 'Back', gg_news_contents_path %>

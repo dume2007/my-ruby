@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Classid:</strong>
+  <%= @gg_news.classid %>
+</p>
+
+<p>
+  <strong>Imgurl:</strong>
+  <%= @gg_news.imgurl %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @gg_news.title %>
+</p>
+
+<p>
+  <strong>Author:</strong>
+  <%= @gg_news.author %>
+</p>
+
+<p>
+  <strong>Filesize:</strong>
+  <%= @gg_news.filesize %>
+</p>
+
+<p>
+  <strong>Fileimg:</strong>
+  <%= @gg_news.fileimg %>
+</p>
+
+<p>
+  <strong>Onclick:</strong>
+  <%= @gg_news.onclick %>
+</p>
+
+<%= link_to 'Edit', edit_gg_news_path(@gg_news) %> |
+<%= link_to 'Back', gg_news_index_path %>

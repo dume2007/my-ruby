@@ -1,0 +1,39 @@
+<h1>Listing gg_news</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Classid</th>
+      <th>Imgurl</th>
+      <th>Title</th>
+      <th>Author</th>
+      <th>Filesize</th>
+      <th>Fileimg</th>
+      <th>Onclick</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @gg_news.each do |gg_news| %>
+      <tr>
+        <td><%= gg_news.classid %></td>
+        <td><%= gg_news.imgurl %></td>
+        <td><%= gg_news.title %></td>
+        <td><%= gg_news.author %></td>
+        <td><%= gg_news.filesize %></td>
+        <td><%= gg_news.fileimg %></td>
+        <td><%= gg_news.onclick %></td>
+        <td><%= link_to 'Show', gg_news %></td>
+        <td><%= link_to 'Edit', edit_gg_news_path(gg_news) %></td>
+        <td><%= link_to 'Destroy', gg_news, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Gg news', new_gg_news_path %>
