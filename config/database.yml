@@ -11,10 +11,10 @@
 development:
   adapter: mysql2
   encoding: utf8
-  database: gouyg
+  database: test
   pool: 5
   username: ruby_user
-  password: ruby0623
+  password: ruby2
   socket: /tmp/mysql.sock
 
 # Warning: The database defined as "test" will be erased and
